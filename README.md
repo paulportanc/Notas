@@ -17,4 +17,10 @@
 3. Escaneo de **puertos**
 
    ```bash
-   nmap -sC -sV -p22,80 [TARGET_IP] -oN targeted 
+   nmap -sC -sV -p22,80 [TARGET_IP] -oN targeted
+
+4. Usando **script**
+
+   ```bash
+   nmap -sV -vv --script vuln [TARGET_IP]
+   
