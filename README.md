@@ -6,8 +6,6 @@
 
 1. **Tipos de escaneos**
 
-`-T5` en entornos reales bajar a `-T2`.
-
    ```bash
    nmap -p- --open -T5 -v -n [TARGET_IP] -oG allPorts
 
