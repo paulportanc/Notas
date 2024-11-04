@@ -13,3 +13,8 @@
 
    ```bash
    nmap -p- -sS --min-rate 5000 --open -vvv -n -Pn [TARGET_IP] -oG allPorts 
+
+3. Escaneo de **puertos**
+
+   ```bash
+   nmap -sC -sV -p22,80 [TARGET_IP] -oN targeted 
