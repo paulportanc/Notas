@@ -2,7 +2,7 @@
 
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
-## Installation
+## NMAP
 
 1. **Clone the Repository**
 
