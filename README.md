@@ -26,7 +26,10 @@
 
 ## Gobuster
 
-1. Usar **-T2** para entornos reales
+1. para realizar ataques de **fuerza bruta** contra URI (directorios y archivos), subdominios DNS y nombres de host virtuales
 
    ```bash
-   nmap -p- --open -T5 -v -n [TARGET_IP] -oG allPorts
+   gobuster -u http://example.com -w wordlist.txt dir
+
+ ```bash
+   gobuster dir -u http://10.10.108.46:3333 -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt
