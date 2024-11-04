@@ -30,7 +30,7 @@
 
 ## Gobuster
 
-1. para realizar ataques de **fuerza bruta** contra URI (directorios y archivos), subdominios DNS y nombres de host virtuales
+1. Para realizar ataques de **fuerza bruta** contra URI (directorios y archivos), subdominios DNS y nombres de host virtuales
 
    ```bash
    gobuster -u http://example.com -w wordlist.txt dir
@@ -38,4 +38,14 @@
    ```bash
    gobuster dir -u http://10.10.108.46:3333 -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt
    ```
-   
+
+## Hydra
+
+1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
+
+   ```bash
+   hydra -t 4 -l <username> -P /usr/share/wordlists/rockyou.txt -vV [TARGET_IP] ftp
+   ```
+   ```bash
+   hydra -t 4 -l <username> -P /usr/share/wordlists/rockyou.txt -vV [TARGET_IP] ssh
+   ```
