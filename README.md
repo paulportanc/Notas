@@ -4,9 +4,9 @@
 
 ## Nmap
 
-1. **Clone the Repository**
+1. **Tipos de escaneos**
 
    ```bash
-   git clone https://github.com/coffinsp/customBsqli.git
+   nmap -p- --open -T5 -v -n **[TARGET_IP]** -oG allPorts  
    cd customBsqli
    python lostsec.py
