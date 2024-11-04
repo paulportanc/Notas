@@ -4,7 +4,7 @@
 
 ## Nmap
 
-1. **Tipos de escaneos**
+1. **Usar T2 para entornos reales** 
 
    ```bash
    nmap -p- --open -T5 -v -n [TARGET_IP] -oG allPorts
