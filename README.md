@@ -1,4 +1,3 @@
-![Screenshot (283)]([https://github.com/user-attachments/assets/6871cc38-b3e6-4903-b75d-6cf42cabdc5e](https://avatars.githubusercontent.com/u/9287004?v=4&size=64))
 # CustomBSQLi - LostSec
 
 `lostsec.py` is a script for performing Blind SQL Injection (BSQLi) attacks on web applications. It is designed to help security professionals and researchers in assessing the security of web applications by identifying SQL injection vulnerabilities.
