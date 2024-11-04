@@ -1,6 +1,6 @@
 # Pentesting - Notes
 
-`lostsec.py` is a script for performing Blind SQL Injection (BSQLi) attacks on web applications. It is designed to help security professionals and researchers in assessing the security of web applications by identifying SQL injection vulnerabilities.
+`Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
 ## Features
 
