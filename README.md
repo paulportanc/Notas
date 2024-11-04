@@ -9,3 +9,7 @@
    ```bash
    nmap -p- --open -T5 -v -n [TARGET_IP] -oG allPorts
 
+2. **Usar T2 para entornos reales** 
+
+   ```bash
+   nmap -p- --open -T5 -v -n [TARGET_IP] -oG allPorts
