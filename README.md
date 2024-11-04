@@ -20,11 +20,13 @@
 
    ```bash
    nmap -sC -sV -p22,80 [TARGET_IP] -oN targeted
+   ```
 
 4. Usando **script**
 
    ```bash
    nmap -sV -vv --script vuln [TARGET_IP]
+   ```
 
 ## Gobuster
 
@@ -32,6 +34,8 @@
 
    ```bash
    gobuster -u http://example.com -w wordlist.txt dir
-
- ```bash
+   ```
+   ```bash
    gobuster dir -u http://10.10.108.46:3333 -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt
+   ```
+   
