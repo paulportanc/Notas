@@ -47,6 +47,14 @@
    wfuzz -d '{"email":"a@email.com","password":"FUZZ"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/rockyou.txt -u http://127.0.0.1:8888/identity/api/auth/login --hc 405
    ```
 
+## Rockyou
+
+1. Descomprimir
+
+   ```bash
+   gzip -d /usr/share/wordlists/rockyou.txt.gz
+   ```
+
 ## Hydra
 
 1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
