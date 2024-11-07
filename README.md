@@ -108,6 +108,19 @@
    sudo mount -t nfs IP:share /tmp/mount/ -nolock
    ```
 
+
+# Linux: Privilege escalation
+
+1. Buscar permisos en todos los archivos SUID
+
+   ```bash
+   find / -user root -perm -4000 -exec ls -ldb {} \; 
+   ```
+   ```bash
+   find / -perm -u=s -exec ls -l {} \; 2>/dev/null 
+   ```
+
+
 # Linux: Comandos mas usados
 
 1. Para trasnferir archivos usando nc
