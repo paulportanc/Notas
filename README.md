@@ -121,6 +121,18 @@
    ```
 
 
+# Data Base: SQL, MYSQL, SQLITE
+
+1. Leear archivos sqlite
+   
+   ```bash
+   sqlite3 example.db
+   sqlite> .tables
+   sqlite> PRAGMA table_info(customers);
+   sqlite> SELECT * FROM customers;
+   ```
+   
+
 # Linux: Comandos mas usados
 
 1. Para trasnferir archivos usando nc
