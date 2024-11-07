@@ -80,3 +80,37 @@
    ```bash
    smbclient //<TARGET_IP>/<SHARE>
    ```  
+
+
+
+# Sitios Web
+
+1. Para descifrar hashes de contraseñas débiles
+
+   ```bash
+   https://crackstation.net/
+   ```
+2. Para buscar exploit's
+
+   ```bash
+   https://www.exploit-db.com/exploits/
+   ```
+3. Para buscar CVE's
+
+   ```bash
+   https://nvd.nist.gov/vuln/search
+   ```
+   ```bash
+   https://cve.mitre.org/
+   ```
+   ```bash
+   https://www.cvedetails.com/
+   ```
+4. Para codificar y decodificar
+
+   ```bash
+   https://gchq.github.io/CyberChef/
+   ```
+   ```bash
+   https://appdevtools.com/base64-encoder-decoder
+   ```
