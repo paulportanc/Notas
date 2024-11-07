@@ -67,3 +67,16 @@
    hydra -l <username> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "login/:username=^USER^&password=^PASS^:F=incorrect" -V
    ```
 
+## Enum4linux: SMB
+
+1. Enum4linux es una herramienta que se utiliza para enumerar recursos compartidos SMB tanto en sistemas Windows como Linux
+
+   ```bash
+   enum4linux -a <TARGET_IP> 
+   ```
+
+2. Para acceder de forma remota al recurso compartido SMB
+
+   ```bash
+   smbclient //<TARGET_IP>/<SHARE>
+   ```  
