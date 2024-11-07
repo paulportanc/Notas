@@ -39,6 +39,14 @@
    gobuster dir -u http://<TARGET_IP>:<PORT> -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt
    ```
 
+## wfuzz
+
+1. Para realizar ataques de **fuerza bruta** en APIs
+
+   ```bash
+   wfuzz -d '{"email":"a@email.com","password":"FUZZ"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/rockyou.txt -u http://127.0.0.1:8888/identity/api/auth/login --hc 405
+   ```
+
 ## Hydra
 
 1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
