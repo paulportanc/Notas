@@ -100,6 +100,14 @@
    ssh -oHostKeyAlgorithms=+ssh-rsa user@<TARGET_IP>
    ```
 
+## NSF
+
+1. Montar NFS compartidos
+
+   ```bash
+   sudo mount -t nfs IP:share /tmp/mount/ -nolock
+   ```
+
 # Linux: Comandos mas usados
 
 1. Para trasnferir archivos usando nc
