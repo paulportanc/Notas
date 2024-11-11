@@ -255,5 +255,5 @@
    ```
 
 
-> [!DISCLAIMER]  
+> [!Warning]  
 > Este documento está destinado únicamente para fines educativos y de hacking ético. Sólo debe utilzarse para probar sistemas de su propiedad o para los que tenga permiso explícito para probar. El uso no autorizado de sitios web o sistemas de terceros sin consentimiento es ilegal y poco ético.
