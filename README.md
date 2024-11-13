@@ -509,6 +509,77 @@ The background color is '#ffffff' for light mode and '#000000' for dark mode.
    ```
 
 
+
+
+# ***IV. Dark Web***
+
+## Wiki
+
+   - The Hidden Wiki
+   ```bash
+   http[:]//zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad[.]onion/wiki/Main_Page
+   ```
+   - OnionLinks
+   ```bash
+   http[:]//jaz45aabn5vkemy4jkg4mi4syheisqn2wn2n4fsuitpccdackjwxplad[.]onion/
+   ```
+
+## Ransomware Group
+
+   - Ransomware Group Sites
+   ```bash
+   http[:]//ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd[.]onion/
+   ```
+   - RansomHub
+   ```bash
+   http[:]//ransomxifxwc5eteopdobynonjctkxxvap77yqifu2emfbecgbqdw6qd[.]onion//#ShootingHouse
+   ```
+   - INC Ransom
+   ```bash
+   incblog7vmuq7rktic73r4ha4j757m3ptym37tyvifzp2roedyyzzxid[.]onion/blog/leaks
+   ```
+   - Rhysida
+   ```bash
+   rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad[.]onion  / http[:]//rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad[.]onion/
+   ```
+   - Lockbit 3 (blog)
+   ```bash
+   http[:]//lockbit3753ekiocyo5epmpy6klmejchjtzddoekjlnt6mu3qh4de2id[.]onion/
+   ```
+   - Everest
+   ```bash
+   http[:]//ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad[.]onion/
+   ```
+   - RansomEXX
+   ```bash
+   http[:]//rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad[.]onion/
+   ``` 
+
+## Otros
+   
+   - Black Market CC
+   ```bash
+   http[:]//imjxsmcdedgtljeqip5vmqjepruvlip2xstuos5phwsrp3ka3znzn2ad[.]onion/
+   ```
+   - CARDS
+   ```bash
+   http[:]//nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid[.]onion/list.html
+   ```
+   Black Hat Chat
+   ```bash
+   http[:]//blkhatjxlrvc5aevqzz5t6kxldayog6jlx5h7glnu44euzongl4fh5ad[.]onion/
+   ```
+   Facebook
+   ```bash
+   http[:]//4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd[.]onion/
+   ```
+   Massive List Onion Service
+   ```bash
+   http[:]//darknetlidvrsli6iso7my54rjayjursyw637aypb6qambkoepmyq2yd[.]onion/onions
+   ```
+
+
+
 > [!Warning]
 > 
 > # DISCLAIMER
