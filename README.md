@@ -2,7 +2,7 @@
 
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
-## Nmap
+### Nmap
 
 1. Usar **-T2** para entornos reales
 
