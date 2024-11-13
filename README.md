@@ -1,4 +1,4 @@
-# ***1. Pentesting - Notes***
+# ***I. Pentesting - Notes***
 
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
@@ -254,7 +254,12 @@
    https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=es-419&utm_source=ext_sidebar
    ```
 
-# 2. Bug bounty - Notes
+
+
+
+
+
+# ***II. Bug bounty - Notes***
 
 `Bug bounty notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar Bug bounty desde lo mas básico a lo avanzado.
 
@@ -424,7 +429,12 @@
    site:*.EJEMPLO.COM (ext:doc OR ext:docx OR ext:pdf OR ext:rtf OR ext:ppt OR ext:csv OR ext:xls) (intext:confidential OR intext:privileged OR intext:unredacted OR intext:secret OR intext:reserved)
    ```
 
-# 3. Metodologia XXS
+
+
+
+
+
+# ***III. Metodologia XXS***
 
 `Herramientas utilizadas`.
   ```bash
