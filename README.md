@@ -1,5 +1,3 @@
-color = incluir("colores")
-imprimirf("Hola en verde: "..color.verde.."hola"..color.reset.."\n")
 # ***I. Pentesting - Notes***
 
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
