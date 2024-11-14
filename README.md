@@ -507,8 +507,20 @@
    -........)
    ```
 
+# ***III. Metodologia SQL Injection***
 
+1. Buscará directamente todos los subdominios basados ​​en **php**, **asp**, **jsp**, **jspx**, **aspx**.
 
+   - Para múltiples subdominios:
+   ```bash
+   subfinder -dL subdomains.txt -all -silent | httpx-toolkit -td -sc -silent | grep -Ei 'asp|php|jsp|jspx|aspx'
+   ```
+   - Para un solo dominio:
+   ```bash
+   subfinder -d ejemplo.com -all -silent | httpx-toolkit -td -sc -silent | grep -Ei 'asp|php|jsp|jspx|aspx'
+   ```
+
+   
 
 # ***IV. Dark Web***
 
