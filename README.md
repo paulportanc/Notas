@@ -578,8 +578,11 @@ The background color is '#ffffff' for light mode and '#000000' for dark mode.
    http[:]//darknetlidvrsli6iso7my54rjayjursyw637aypb6qambkoepmyq2yd[.]onion/onions
    ```
 ## Breach Forums
-  ```bash
+   ```bash
    https://breachforums.st/member.php
+   ```
+   ```bash
+   breached26tezcofqla4adzyn22notfqwcac7gpbrleg4usehljwkgqd[.]onion
    ```
 
 
