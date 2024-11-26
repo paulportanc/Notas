@@ -520,13 +520,13 @@ cat allurls.txt | grep -E "\.js$" >> js.txt
 ### 6. Usando nuclei para ver encontrar Information disclosure
 
 ```bash
-cat js.txt | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ 
+cat js.txt | nuclei -t /home/sn0w/nuclei-templates/http/exposures/ 
 ```
 
 ### 7. Usando nuclei para ver encontrar Information disclosure en un sitio web
 
 ```bash
-echo www.viator.com | katana -ps | grep -E "\.js$" | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30
+echo www.viator.com | katana -ps | grep -E "\.js$" | nuclei -t /home/sn0w/nuclei-templates/http/exposures/ -c 30
 ```
 
 ### 8. Buscar con dirsearch directorios ocultos vulnerables
@@ -553,13 +553,13 @@ subzy run --targets subdomains_alive.txt --concurrency 100 --hide_fails --verify
 ### 11. CORS
 
 ```bash
-python3 corsy.py -i /home/coffinxp/vaitor/subdomains_alive.txt -t 10 --headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"
+python3 corsy.py -i /home/sn0w/vaitor/subdomains_alive.txt -t 10 --headers "User-Agent: GoogleBot\nCookie: SESSION=Hacked"
 
 ```
 ### 12. CORS con Nuclei
 
 ```bash
-nuclei -list subdomains_alive.txt -t /home/coffinxp/Priv8-Nuclei/cors
+nuclei -list subdomains_alive.txt -t /home/sn0w/Priv8-Nuclei/cors
 ```
 
 ### 13. Nuclei
@@ -577,7 +577,7 @@ cat allurls.txt | gf lfi | nuclei -tags lfi
 ### 15. OR Open Redirect
 
 ```bash
-cat allurls.txt | gf redirect | openredirex -p /home/coffinxp/openRedirect
+cat allurls.txt | gf redirect | openredirex -p /home/sn0w/openRedirect
 ```
 
 
