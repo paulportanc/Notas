@@ -693,6 +693,59 @@ cat allurls.txt | gf redirect | openredirex -p /home/sn0w/openRedirect
    breached26tezcofqla4adzyn22notfqwcac7gpbrleg4usehljwkgqd[.]onion
    ```
 
+# ***VII. Anonimato con Nipe***
+   
+   `NIPE` es un programa que usa la red Tor como puerta de enlace predeterminada del usuario, enrutando todo el tráfico en la red Tor, que a menudo se usa para brindar privacidad y anonimato. Permanecer en el anonimato es una excelente manera de protegerse de todo tipo de vigilancia..
+   
+## 6.1.Instalación
+
+   - Paso 1: Colocarse en el /home/kali y crear el directorio nipe e ingresar.
+   ```bash
+   mkdir nipe
+   cd nipe
+   ```
+   - Paso 2: Luego, clonar este repositorio desde GitHub.
+   ```bash
+   git clone https://github.com/htrgouvea/nipe
+   ```
+   - Paso 3: Dentro habrá otro directorio llamado nipe, ingresar a el.
+   ```bash
+   cd nipe
+   ```    
+   - Paso 4: Ejecutar el siguiente comando para instalar las bibliotecas y dependencias.
+   ```bash
+   sudo cpan install Try::Tiny Config::Simple JSON
+   ```  
+   - Paso 5: Usar el siguiente comando para instalar las dependencias de Nipe o un script de Perl.
+   ```bash
+   sudo perl nipe.pl install
+   ```  
+
+## 6.2.Uso (ejecutar desde /home/kali/nipe/nipe)
+
+   - Paso 1: Verificar el estado de nipe, escriba el siguiente comando. Y verás que el estado actual es deshabilitado. Aparecerá de la siguiente manera: El estado está deshabilitado y la IP es su IP Pública actual. La IP se puede validar ingreando al sitio https://www.whatismyip.com/
+   ```bash
+   sudo perl nipe.pl status
+
+   ┌──(kali㉿kali)-[~/nipe/nipe]
+   └─$ sudo perl nipe.pl status
+
+       [+] Status: false 
+       [+] Ip: 38.25.30.53
+   ```
+  - Paso 2: Para iniciar el servicio Nipe. Luego ejecutar el comando status. El estado está en TRUE y la IP es una IP Pública de otro pais. 
+   ```bash
+   sudo perl nipe.pl start
+
+   ┌──(kali㉿kali)-[~/nipe/nipe]
+   └─$ sudo perl nipe.pl status
+        
+       [+] Status: true 
+       [+] Ip: 185.220.102.8
+   ```
+   - **Nota** es probable que a la primera te aparezca el siguiente error: *[!] ERROR: sorry, it was not possible to establish a connection to the server.*  Si en caso de aparecer el siguiente error solo debes detener el estado con stop y luego volver a iniciar un par de veces hasta que en estado sea TRUE.
+
+
 
 
 > [!Warning]
