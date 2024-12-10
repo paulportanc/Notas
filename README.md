@@ -5,7 +5,7 @@
 
 ## 1.1.Nmap
 
-1. Usar **-T2** para entornos reales
+1. No Usar **-T5** para entornos reales y para el examen de eJPT porque si no se cae la máquina. 
 
    ```bash
    nmap -p- --open -T5 -v -n <TARGET_IP> -oG allPorts
