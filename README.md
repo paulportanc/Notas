@@ -509,6 +509,27 @@
    site:*.dell.com (ext:doc OR ext:docx OR ext:odt OR ext:pdf OR ext:rtf OR ext:ppt OR ext:pptx OR ext:csv OR ext:xls OR ext:xlsx OR ext:txt OR ext:xml OR ext:json OR ext:zip OR ext:rar OR ext:md OR ext:log OR ext:bak OR ext:conf OR ext:sql)
    ```
 
+## 2.14.Gau
+
+1. Encontrar información Divulgación (***Information Disclosure***): Expresión regular.
+   
+   - Instalación de gau https://github.com/lc/gau
+   ```bash
+   git clone https://github.com/lc/gau.git; \
+   cd gau/cmd; \
+   go build; \
+   sudo mv gau /usr/local/bin/; \
+   gau --version;
+   ```
+
+   - Para usar la expresión regular, use los siguientes comandos:
+   ```bash
+   echo https://sksc.somaiya.edu | gau | grep -E "\.(xls|xml|xlsx|json|pdf|sql|doc|docx|pptx|txt|zip|tar\.gz|tgz|bak|7z|rar|log|cache|secret|db|backup|yml|gz|config|csv|yaml|md|md5|tar|xz|7zip|p12|pem|key|crt|csr|sh|pl|py|java|class|jar|war|ear|sqlitedb|sqlite3|dbf|db3|accdb|mdb|sqlcipher|gitignore|env|ini|conf|properties|plist|cfg)$"
+   ```
+   ```bash 
+   echo https://sksc.somaiya.edu | gau | grep -E          "\.xls|\.xml|\.xlsx|\.json|\.pdf|\.sql|\.doc|\.docx|\.pptx|\.txt|\.zip|\.tar\.gz|\.tgz|\.bak|\.7z|\.rar|\.log|\.cache|\.secret|\.db|\.backup|\.yml|\.gz|\.config|\.csv|\.yaml   |\.md|\.md5"
+   ```
+   
 
 # ***III. Metodologia Bug Hunting***
 
