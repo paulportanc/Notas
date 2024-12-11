@@ -344,6 +344,16 @@
    nuclei -l websites_Possible_Phishing -tags phishing -itags phishing
    ```
    
+2. Plantilla para wordpress de divulgación que contiene información tan senstive que cuentan como P1. Sólo tiene que ejecutar esta plantilla en todos los subdominios bbp (bug bounty program). El template **wp-setup-config.yaml** se encuentra en el repositorio.
+
+   ```bash
+   echo 'https://speedtest.ejemplo.com/' | nuclei -t nuclei-template/wp-setup-config.yaml
+   ```
+    ```bash
+   subfinder -d example.com -all | httpx-toolkit | nuclei -t nuclei-template/wp-setup-config.yaml
+   ```
+   
+      
 ## 2.3.XSS Reflejado
 
 1. XXS reflejado con zero click en un '<'input'>' vulnerable
