@@ -48,7 +48,15 @@
    wfuzz -d '{"email":"a@email.com","password":"FUZZ"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/rockyou.txt -u http://127.0.0.1:8888/identity/api/auth/login --hc 405
    ```
 
-## 1.4.Hydra
+## 1.4.Httpx 
+
+1. Utilizar **Httpx** para encontrar **LFI**. Este comando que le mostrará todas las urls vulnerables lfi en la pantalla, básicamente etc/passwd archivo de contraseña en la respuesta y mostrar todas las urls en la pantalla.
+
+   ```bash
+   echo 'https://ejemplo.com/index.php?page=' | httpx-toolkit -paths payloads/lfi.txt -threads 50 -random-agent -mc 200 -mr "root:(x|\|\$[^\:]):0:0:"
+   ```
+   
+## 1.5.Hydra
 
 1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
 
@@ -68,7 +76,7 @@
    hydra -l <username> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "login/:username=^USER^&password=^PASS^:F=incorrect" -V
    ```
 
-## 1.5.Enum4linux: SMB
+## 1.6.Enum4linux: SMB
 
 1. Enum4linux es una herramienta que se utiliza para enumerar recursos compartidos SMB tanto en sistemas Windows como Linux. Opciones **-U** (get userlist), **-M** (get machine list), **-N** (get namelist dump (different from -U and-M)), **-S**  (get sharelist), **-P**  (get password policy information), **-G** (get group and member list) and **-a** (all of the above (full basic enumeration)).
 
@@ -100,7 +108,7 @@
    nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <TARGET_IP> 
    ``` 
 
-## 1.6.Rockyou
+## 1.7.Rockyou
 
 1. Descomprimir
 
@@ -108,7 +116,7 @@
    gzip -d /usr/share/wordlists/rockyou.txt.gz
    ```
 
-## 1.7.SSH
+## 1.8.SSH
 
 1. Realizar un conexión remota
 
