@@ -204,7 +204,7 @@
    ```
 
 
-## 1.11.Data Base: SQL, MYSQL, SQLITE
+## 1.11.Data Base: SQL, MYSQL, SQLITE, PhpMyAdmin
 
 1. Leear archivos sqlite
    
@@ -213,6 +213,13 @@
    sqlite> .tables
    sqlite> PRAGMA table_info(customers);
    sqlite> SELECT * FROM customers;
+   ```
+
+2. Si encuentra alguna página phpmyadmin, simplemente omítala con la página de configuración de instalación Ejemplo: https://www.ejmplo.com/phpmyadmin/.
+
+   - Omisión pegar ***/setup/index.php/setup/index.php?page=servers&mods=test&id=test*** después de phpmyadmin/ La mayoría de las veces, debido a una mala configuración de seguridad, se abre la página de configuración principal, así que simplemente repórtelo al programa de recompensas y gane una buena cantidad de recompensa
+   ```bash
+   https://www.ejemplo.com/media/phpmyadmin/setup/index.php/setup/index.php?page=servers&mods=test&id=test.
    ```
    
 
