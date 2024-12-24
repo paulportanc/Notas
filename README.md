@@ -518,26 +518,6 @@
    echo https://sksc.somaiya.edu | gau | grep -E "\.xls|\.xml|\.xlsx|\.json|\.pdf|\.sql|\.doc|\.docx|\.pptx|\.txt|\.zip|\.tar\.gz|\.tgz|\.bak|\.7z|\.rar|\.log|\.cache|\.secret|\.db|\.backup|\.yml|\.gz|\.config|\.csv|\.yaml|\.md|\.md5"
    ```
    
-
-# ***IV. Metodologia XXS***
-
-`Herramientas utilizadas`.
-  ```bash
- https://github.com/lc/gau
- https://github.com/tomnomnom/gf
- https://github.com/coffinxp/gFpattren
- https://github.com/s0md3v/uro
- https://github.com/KathanP19/Gxss
- https://github.com/Emoe/kxss
- https://github.com/coffinxp/loxs
-```
-
-1. ...........
-
-   ```bash
-   -........)
-   ```
-
 # ***V. Metodologia SQL Injection***
 
 1. Buscará directamente todos los subdominios basados ​​en **php**, **asp**, **jsp**, **jspx**, **aspx**.
