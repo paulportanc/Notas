@@ -2,12 +2,31 @@
    
 | Extensiones | Descripción | URL | Browser | Logo |
 | --- | --- | --- | --- | --- |
-| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/e261f3e348bb9ba18e12fb671180633de99f6a38/extension-img/EndPointer.png "EndPointer")
- |
-| `git diff` | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
+| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/e261f3e348bb9ba18e12fb671180633de99f6a38/extension-img/EndPointer.png "EndPointer") |
+| `Ripper Web Content - Capture Metadata Content` | Extensión que analiza y extrae metadatos del contenido encontrado en la web | https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/65ce6804513b18d14d764f6351772190ecfae667/extension-img/RipperWebContent.png "Ripper Web Content") |
 
 
-# ***VII. Anonimato con Nipe***
+
+1. Ripper Web Content | Capture Metadata Content
+
+   Ofrecido por Miguel Segovia - Correo electrónico miguelsegovia21@gmail.com 
+   ```bash
+   https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh?hl=es-419&utm_source=ext_sidebar
+   ```
+
+2. User-Agent Switcher for Chrome
+
+   Desarrollador Google 1600 Amphitheatre Pkwy Mountain View, CA 94043 US - Correo electrónico cbe-cws-admins@google.com
+   ```bash
+   https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=es-419&utm_source=ext_sidebar
+   ```
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# ***II. Anonimato con Nipe***
    
    `NIPE` es un programa que usa la red Tor como puerta de enlace predeterminada del usuario, enrutando todo el tráfico en la red Tor, que a menudo se usa para brindar privacidad y anonimato. Permanecer en el anonimato es una excelente manera de protegerse de todo tipo de vigilancia..
    
@@ -63,7 +82,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-# ***VI. Dark Web***
+# ***III. Dark Web***
 
 ## 6.1.Wiki
 
@@ -147,11 +166,6 @@
 
 
 
-
-
-# ***I. Pentesting - Notes***
-
-`Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
 
 ## 1.2.Gobuster
 
@@ -431,28 +445,6 @@
    ```bash
    https://appdevtools.com/base64-encoder-decoder
    ```
-
-
-## 1.16.Extensiones para web browser
-
-1. Ripper Web Content | Capture Metadata Content
-
-   Ofrecido por Miguel Segovia - Correo electrónico miguelsegovia21@gmail.com 
-   ```bash
-   https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh?hl=es-419&utm_source=ext_sidebar
-   ```
-
-2. User-Agent Switcher for Chrome
-
-   Desarrollador Google 1600 Amphitheatre Pkwy Mountain View, CA 94043 US - Correo electrónico cbe-cws-admins@google.com
-   ```bash
-   https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=es-419&utm_source=ext_sidebar
-   ```
-
-
-
-
-
 
 # ***II. Bug bounty - Notes***
 
