@@ -1,25 +1,11 @@
 # ***I. Extensiones***
    
-| Extensiones | Descripción | URL | Browser | Logo |
-| --- | --- | --- | --- | --- |
-| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/e261f3e348bb9ba18e12fb671180633de99f6a38/extension-img/EndPointer.png "EndPointer") |
-| `Ripper Web Content - Capture Metadata Content` | Extensión que analiza y extrae metadatos del contenido encontrado en la web | https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/65ce6804513b18d14d764f6351772190ecfae667/extension-img/RipperWebContent.png "Ripper Web Content") |
+| Extensiones | Descripción | URL | Browser | Logo | By |
+| --- | --- | --- | --- | --- | --- |
+| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/e261f3e348bb9ba18e12fb671180633de99f6a38/extension-img/EndPointer.png "EndPointer") | `Interloper Security Group` |
+| `Ripper Web Content - Capture Metadata Content` | Extensión que analiza y extrae metadatos del contenido encontrado en la web | https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/65ce6804513b18d14d764f6351772190ecfae667/extension-img/RipperWebContent.png "Ripper Web Content") | `Miguel Segovia` |
+| `User-Agent Switcher for Chrome` | Puede cambiar de forma rápida y sencilla entre cadenas de agente de usuario | https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/d2e5fd3473d58a0b7571c7cc8494be32ce51cc72/extension-img/User-Agent.png "User-Agent") | `Google 1600 Amphitheatre Pkwy Mountain View, CA 94043 US` |
 
-
-
-1. Ripper Web Content | Capture Metadata Content
-
-   Ofrecido por Miguel Segovia - Correo electrónico miguelsegovia21@gmail.com 
-   ```bash
-   https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh?hl=es-419&utm_source=ext_sidebar
-   ```
-
-2. User-Agent Switcher for Chrome
-
-   Desarrollador Google 1600 Amphitheatre Pkwy Mountain View, CA 94043 US - Correo electrónico cbe-cws-admins@google.com
-   ```bash
-   https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg?hl=es-419&utm_source=ext_sidebar
-   ```
 
 
 
