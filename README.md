@@ -16,6 +16,7 @@
 | `HackTools` | Esta extensión le brinda toda la información útil para probar el sitio de manera sencilla | https://addons.mozilla.org/en-US/firefox/addon/hacktools/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/2a04f9b8b4b08392d3d8dd13d8ebc8280ebd3d0a/extension-img/HackTools.png "HackTools") | `HackTools` |
 
 
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
