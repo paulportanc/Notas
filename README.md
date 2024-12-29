@@ -5,8 +5,8 @@
 | `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/e261f3e348bb9ba18e12fb671180633de99f6a38/extension-img/EndPointer.png "EndPointer") | `Interloper Security Group` |
 | `Ripper Web Content - Capture Metadata Content` | Extensión que analiza y extrae metadatos del contenido encontrado en la web | https://chromewebstore.google.com/detail/ripper-web-content-captur/popfhajlkgkiecedhefhifccngogomgh | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/65ce6804513b18d14d764f6351772190ecfae667/extension-img/RipperWebContent.png "Ripper Web Content") | `Miguel Segovia` |
 | `User-Agent Switcher for Chrome` | Puede cambiar de forma rápida y sencilla entre cadenas de agente de usuario | https://chromewebstore.google.com/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/d2e5fd3473d58a0b7571c7cc8494be32ce51cc72/extension-img/User-Agent.png "User-Agent") | `Google 1600 Amphitheatre Pkwy Mountain View, CA 94043 US` |
-
-
+| `HackBar` | Una extensión del navegador para pruebas de penetración, aparece en la opción de inspeccionar una URL  | https://chromewebstore.google.com/detail/hackbar/ginpbkfigcoaokgflihfhhmglmbchinc | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/efe4c1a0ea1a19b9bc64f9f9a4add2fdd0b500d4/extension-img/HackBar.png "HackBar") | `0140454` |
+| `Max HacKBar` | Una extensión del navegador para pruebas de penetración, aparece en la opción de inspeccionar una URL  | https://addons.mozilla.org/es/firefox/addon/maxs-hackbar/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/efe4c1a0ea1a19b9bc64f9f9a4add2fdd0b500d4/extension-img/MaxHacKBar.png "Max HacKBar") | `Maxlab` |
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
