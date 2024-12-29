@@ -12,7 +12,7 @@
 | `Temp Mail` | Correo electrónico temporal desechable | https://addons.mozilla.org/en-US/firefox/addon/temp-mail/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/70aa57238a65069a9b451b6f720b77dfe685882a/extension-img/TempMail.png "Temp Mail") | `Temp Mail` |
 | `Hunter` | Encuentra direcciones de correo electrónico en segundos | https://addons.mozilla.org/en-US/firefox/addon/hunterio/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/0c7a6f078d5e219c922475787193d2c818211b68/extension-img/Hunter.png "Hunter") | `Hunter` |
 | `Trufflehog` | Esta extensión le ayuda a encontrar claves API ocultas en sitios web | https://addons.mozilla.org/en-US/firefox/addon/trufflehog/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/f8d0e85f718f55ca4582258064e9c18bb2254864/extension-img/Trufflehog.png "Trufflehog") | `Trufflehog` |
-
+| `FoxyProxy Standard` | Esta extensión es para usar burpsuite o cualquier otra aplicación de captura de proxy (mitm) | https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/daa2f5e5c8e9738d2ba9ee56fe8a5b611f6bd963/extension-img/FoxyProxyStandard.png "FoxyProxy Standard") | `FoxyProxy Standard` |
 
 
 
