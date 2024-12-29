@@ -1,4 +1,4 @@
-# ***I. Extensiones***
+# ***I. Extensiones para Bug Hunting***
    
 | Extensiones | Descripción | URL | Browser | Logo | By |
 | --- | --- | --- | --- | --- | --- |
