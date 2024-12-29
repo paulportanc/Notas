@@ -2,7 +2,7 @@
    
 | Extensiones | Descripción | URL | Browser | Logo |
 | --- | --- | --- | --- | --- |
-| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | List all *new or modified* files |
+| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") |
 | `git diff` | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
 
 
