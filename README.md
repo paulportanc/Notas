@@ -11,6 +11,10 @@
 | `WaybackURL` | Obtener todas las URL que Wayback Machine conoce para un dominio. Es un plugin tipo FFUZZ | https://addons.mozilla.org/en-US/firefox/addon/waybackurl/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/a09c8a99375d5899d7d8a8eb93688053f53d8520/extension-img/WaybackURL.png "WaybackURL") | `WaybackURL` |
 | `Temp Mail` | Correo electrónico temporal desechable | https://addons.mozilla.org/en-US/firefox/addon/temp-mail/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/70aa57238a65069a9b451b6f720b77dfe685882a/extension-img/TempMail.png "Temp Mail") | `Temp Mail` |
 | `Hunter` | Encuentra direcciones de correo electrónico en segundos | https://addons.mozilla.org/en-US/firefox/addon/hunterio/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/0c7a6f078d5e219c922475787193d2c818211b68/extension-img/Hunter.png "Hunter") | `Hunter` |
+| `Trufflehog` | Esta extensión le ayuda a encontrar claves API ocultas en sitios web | https://addons.mozilla.org/en-US/firefox/addon/trufflehog/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/f8d0e85f718f55ca4582258064e9c18bb2254864/extension-img/Trufflehog.png "Trufflehog") | `Trufflehog` |
+
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
