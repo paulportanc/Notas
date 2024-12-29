@@ -14,7 +14,7 @@
 | `Trufflehog` | Esta extensión le ayuda a encontrar claves API ocultas en sitios web | https://addons.mozilla.org/en-US/firefox/addon/trufflehog/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/f8d0e85f718f55ca4582258064e9c18bb2254864/extension-img/Trufflehog.png "Trufflehog") | `Xhunt3r` |
 | `FoxyProxy Standard` | Esta extensión es para usar burpsuite o cualquier otra aplicación de captura de proxy (mitm) | https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/daa2f5e5c8e9738d2ba9ee56fe8a5b611f6bd963/extension-img/FoxyProxyStandard.png "FoxyProxy Standard") | `Eric Jung, erosman` |
 | `HackTools` | Esta extensión le brinda toda la información útil para probar el sitio de manera sencilla | https://addons.mozilla.org/en-US/firefox/addon/hacktools/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/2a04f9b8b4b08392d3d8dd13d8ebc8280ebd3d0a/extension-img/HackTools.png "HackTools") | `Riadh B. & Ludovic C.` |
-
+| `CookieManager - Cookie Editor` | Esta es la mejor extensión para el editor de cookies y también le indicará si el sitio es http únicamente o si el indicador de seguridad está configurado o no | https://addons.mozilla.org/en-US/firefox/addon/edit-cookie/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/524832dbd7ec9f7f344b315f6b20d1e5b953d626/extension-img/CookieManager.png "HackTools") | `Joue` |
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
