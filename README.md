@@ -1,3 +1,153 @@
+# ***I. Extensiones***
+   
+| Extensiones | Descripción | URL | Browser | Logo |
+| --- | --- | --- | --- | --- |
+| `EndPointer` | Analiza y extrae endpoints de aplicaciones web | https://addons.mozilla.org/en-US/firefox/addon/endpointer/ | Firefox | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged | Show file differences that **haven't been** staged |
+
+
+# ***VII. Anonimato con Nipe***
+   
+   `NIPE` es un programa que usa la red Tor como puerta de enlace predeterminada del usuario, enrutando todo el tráfico en la red Tor, que a menudo se usa para brindar privacidad y anonimato. Permanecer en el anonimato es una excelente manera de protegerse de todo tipo de vigilancia..
+   
+## 6.1.Instalación
+
+   - Paso 1: Colocarse en el /home/kali y crear el directorio nipe e ingresar.
+   ```bash
+   mkdir nipe
+   cd nipe
+   ```
+   - Paso 2: Luego, clonar este repositorio desde GitHub.
+   ```bash
+   git clone https://github.com/htrgouvea/nipe
+   ```
+   - Paso 3: Dentro habrá otro directorio llamado nipe, ingresar a el.
+   ```bash
+   cd nipe
+   ```    
+   - Paso 4: Ejecutar el siguiente comando para instalar las bibliotecas y dependencias.
+   ```bash
+   sudo cpan install Try::Tiny Config::Simple JSON
+   ```  
+   - Paso 5: Usar el siguiente comando para instalar las dependencias de Nipe o un script de Perl.
+   ```bash
+   sudo perl nipe.pl install
+   ```  
+
+## 6.2.Uso (ejecutar desde /home/kali/nipe/nipe)
+
+   - Paso 1: Verificar el estado de nipe, escriba el siguiente comando. Y verás que el estado actual es deshabilitado. Aparecerá de la siguiente manera: El estado está deshabilitado y la IP es su IP Pública actual. La IP se puede validar ingreando al sitio https://www.whatismyip.com/
+   ```bash
+   sudo perl nipe.pl status
+
+   ┌──(kali㉿kali)-[~/nipe/nipe]
+   └─$ sudo perl nipe.pl status
+
+       [+] Status: false 
+       [+] Ip: 38.25.30.53
+   ```
+  - Paso 2: Para iniciar el servicio Nipe. Luego ejecutar el comando status. El estado está en TRUE y la IP es una IP Pública de otro pais. 
+   ```bash
+   sudo perl nipe.pl start
+
+   ┌──(kali㉿kali)-[~/nipe/nipe]
+   └─$ sudo perl nipe.pl status
+        
+       [+] Status: true 
+       [+] Ip: 185.220.102.8
+   ```
+   - **Nota** es probable que a la primera te aparezca el siguiente error: *[!] ERROR: sorry, it was not possible to establish a connection to the server.*  Si en caso de aparecer el siguiente error solo debes detener el estado con stop y luego volver a iniciar un par de veces hasta que en estado sea TRUE.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# ***VI. Dark Web***
+
+## 6.1.Wiki
+
+   - The Hidden Wiki
+   ```bash
+   http[:]//zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad[.]onion/wiki/Main_Page
+   ```
+   - OnionLinks
+   ```bash
+   http[:]//jaz45aabn5vkemy4jkg4mi4syheisqn2wn2n4fsuitpccdackjwxplad[.]onion/
+   ```
+
+## 6.2.Ransomware Group
+
+   - Ransomware Group Sites
+   ```bash
+   http[:]//ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd[.]onion/
+   ```
+   - RansomHub
+   ```bash
+   http[:]//ransomxifxwc5eteopdobynonjctkxxvap77yqifu2emfbecgbqdw6qd[.]onion//#ShootingHouse
+   ```
+   - INC Ransom
+   ```bash
+   incblog7vmuq7rktic73r4ha4j757m3ptym37tyvifzp2roedyyzzxid[.]onion/blog/leaks
+   ```
+   - Rhysida
+   ```bash
+   rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad[.]onion  / http[:]//rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad[.]onion/
+   ```
+   - Lockbit 3 (blog)
+   ```bash
+   http[:]//lockbit3753ekiocyo5epmpy6klmejchjtzddoekjlnt6mu3qh4de2id[.]onion/
+   ```
+   - Everest
+   ```bash
+   http[:]//ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad[.]onion/
+   ```
+   - RansomEXX
+   ```bash
+   http[:]//rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad[.]onion/
+   ``` 
+
+## 6.3.Otros
+   
+   - Black Market CC
+   ```bash
+   http[:]//imjxsmcdedgtljeqip5vmqjepruvlip2xstuos5phwsrp3ka3znzn2ad[.]onion/
+   ```
+   - CARDS
+   ```bash
+   http[:]//nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid[.]onion/list.html
+   ```
+   Black Hat Chat
+   ```bash
+   http[:]//blkhatjxlrvc5aevqzz5t6kxldayog6jlx5h7glnu44euzongl4fh5ad[.]onion/
+   ```
+   Facebook
+   ```bash
+   http[:]//4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd[.]onion/
+   ```
+   Massive List Onion Service
+   ```bash
+   http[:]//darknetlidvrsli6iso7my54rjayjursyw637aypb6qambkoepmyq2yd[.]onion/onions
+   ```
+## 6.4.Breach Forums
+   ```bash
+   https://breachforums.st/member.php
+   ```
+   ```bash
+   breached26tezcofqla4adzyn22notfqwcac7gpbrleg4usehljwkgqd[.]onion
+   ```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 # ***I. Pentesting - Notes***
 
 `Pentesting Notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar pentesting desde lo mas básico a lo avanzado.
@@ -532,132 +682,6 @@
    ```
 
    
-
-# ***VI. Dark Web***
-
-## 6.1.Wiki
-
-   - The Hidden Wiki
-   ```bash
-   http[:]//zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad[.]onion/wiki/Main_Page
-   ```
-   - OnionLinks
-   ```bash
-   http[:]//jaz45aabn5vkemy4jkg4mi4syheisqn2wn2n4fsuitpccdackjwxplad[.]onion/
-   ```
-
-## 6.2.Ransomware Group
-
-   - Ransomware Group Sites
-   ```bash
-   http[:]//ransomwr3tsydeii4q43vazm7wofla5ujdajquitomtd47cxjtfgwyyd[.]onion/
-   ```
-   - RansomHub
-   ```bash
-   http[:]//ransomxifxwc5eteopdobynonjctkxxvap77yqifu2emfbecgbqdw6qd[.]onion//#ShootingHouse
-   ```
-   - INC Ransom
-   ```bash
-   incblog7vmuq7rktic73r4ha4j757m3ptym37tyvifzp2roedyyzzxid[.]onion/blog/leaks
-   ```
-   - Rhysida
-   ```bash
-   rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad[.]onion  / http[:]//rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad[.]onion/
-   ```
-   - Lockbit 3 (blog)
-   ```bash
-   http[:]//lockbit3753ekiocyo5epmpy6klmejchjtzddoekjlnt6mu3qh4de2id[.]onion/
-   ```
-   - Everest
-   ```bash
-   http[:]//ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad[.]onion/
-   ```
-   - RansomEXX
-   ```bash
-   http[:]//rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad[.]onion/
-   ``` 
-
-## 6.3.Otros
-   
-   - Black Market CC
-   ```bash
-   http[:]//imjxsmcdedgtljeqip5vmqjepruvlip2xstuos5phwsrp3ka3znzn2ad[.]onion/
-   ```
-   - CARDS
-   ```bash
-   http[:]//nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid[.]onion/list.html
-   ```
-   Black Hat Chat
-   ```bash
-   http[:]//blkhatjxlrvc5aevqzz5t6kxldayog6jlx5h7glnu44euzongl4fh5ad[.]onion/
-   ```
-   Facebook
-   ```bash
-   http[:]//4wbwa6vcpvcr3vvf4qkhppgy56urmjcj2vagu2iqgp3z656xcmfdbiqd[.]onion/
-   ```
-   Massive List Onion Service
-   ```bash
-   http[:]//darknetlidvrsli6iso7my54rjayjursyw637aypb6qambkoepmyq2yd[.]onion/onions
-   ```
-## 6.4.Breach Forums
-   ```bash
-   https://breachforums.st/member.php
-   ```
-   ```bash
-   breached26tezcofqla4adzyn22notfqwcac7gpbrleg4usehljwkgqd[.]onion
-   ```
-
-# ***VII. Anonimato con Nipe***
-   
-   `NIPE` es un programa que usa la red Tor como puerta de enlace predeterminada del usuario, enrutando todo el tráfico en la red Tor, que a menudo se usa para brindar privacidad y anonimato. Permanecer en el anonimato es una excelente manera de protegerse de todo tipo de vigilancia..
-   
-## 6.1.Instalación
-
-   - Paso 1: Colocarse en el /home/kali y crear el directorio nipe e ingresar.
-   ```bash
-   mkdir nipe
-   cd nipe
-   ```
-   - Paso 2: Luego, clonar este repositorio desde GitHub.
-   ```bash
-   git clone https://github.com/htrgouvea/nipe
-   ```
-   - Paso 3: Dentro habrá otro directorio llamado nipe, ingresar a el.
-   ```bash
-   cd nipe
-   ```    
-   - Paso 4: Ejecutar el siguiente comando para instalar las bibliotecas y dependencias.
-   ```bash
-   sudo cpan install Try::Tiny Config::Simple JSON
-   ```  
-   - Paso 5: Usar el siguiente comando para instalar las dependencias de Nipe o un script de Perl.
-   ```bash
-   sudo perl nipe.pl install
-   ```  
-
-## 6.2.Uso (ejecutar desde /home/kali/nipe/nipe)
-
-   - Paso 1: Verificar el estado de nipe, escriba el siguiente comando. Y verás que el estado actual es deshabilitado. Aparecerá de la siguiente manera: El estado está deshabilitado y la IP es su IP Pública actual. La IP se puede validar ingreando al sitio https://www.whatismyip.com/
-   ```bash
-   sudo perl nipe.pl status
-
-   ┌──(kali㉿kali)-[~/nipe/nipe]
-   └─$ sudo perl nipe.pl status
-
-       [+] Status: false 
-       [+] Ip: 38.25.30.53
-   ```
-  - Paso 2: Para iniciar el servicio Nipe. Luego ejecutar el comando status. El estado está en TRUE y la IP es una IP Pública de otro pais. 
-   ```bash
-   sudo perl nipe.pl start
-
-   ┌──(kali㉿kali)-[~/nipe/nipe]
-   └─$ sudo perl nipe.pl status
-        
-       [+] Status: true 
-       [+] Ip: 185.220.102.8
-   ```
-   - **Nota** es probable que a la primera te aparezca el siguiente error: *[!] ERROR: sorry, it was not possible to establish a connection to the server.*  Si en caso de aparecer el siguiente error solo debes detener el estado con stop y luego volver a iniciar un par de veces hasta que en estado sea TRUE.
 
 
 
