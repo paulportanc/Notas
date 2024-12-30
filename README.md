@@ -16,6 +16,11 @@
 | `HackTools` | Esta extensión le brinda toda la información útil para probar el sitio de manera sencilla | https://addons.mozilla.org/en-US/firefox/addon/hacktools/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/2a04f9b8b4b08392d3d8dd13d8ebc8280ebd3d0a/extension-img/HackTools.png "HackTools") | `Riadh B. & Ludovic C.` |
 | `CookieManager - Cookie Editor` | Esta es la mejor extensión para el editor de cookies y también le indicará si el sitio es http únicamente o si el indicador de seguridad está configurado o no. Otra alternativa https://cookie-editor.com/ | https://addons.mozilla.org/en-US/firefox/addon/edit-cookie/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/524832dbd7ec9f7f344b315f6b20d1e5b953d626/extension-img/CookieManager.png "HackTools") | `Joue` |
 | `Disable WebRTC` | Esta extensión es el mejor uso para proteger su IP VPN del webrtc exposer | https://addons.mozilla.org/en-US/firefox/addon/happy-bonobo-disable-webrtc/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/2e090e13b2b8e5430436c9f575434c063dd2c897/extension-img/DisableWebRTC.png "Disable WebRTC") | `Chris Antaki` |
+| `Link Gopher` | Esta extensión se utiliza para recuperar todos los dominios y enlaces de sitios web y resultados de Google | https://addons.mozilla.org/en-US/firefox/addon/link-gopher/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/1153f8ff9adbe275dcca47ef3233d071ac813f26/extension-img/LinkGopher.png "Link Gopher") | `Andrew Ziem` |
+| `FindSomething` | Esta extensión se utiliza para encontrar posibles parámetros ocultos o claves secretas | https://addons.mozilla.org/en-US/firefox/addon/findsomething/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/b4bf22c8a12f128317ec6a1edb1930808627c52a/extension-img/FindSomething.png "FindSomething") | `residual.laugh` |
+| `DotGit` | Esta extensión le ayudará a encontrar archivos .git en la divulgación de información p1 del sitio web | https://addons.mozilla.org/en-US/firefox/addon/dotgit/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/6028d403e29ede095d52b42f1869229f93d0386e/extension-img/DotGit.png "DotGit") | `davtur` |
+
+
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
