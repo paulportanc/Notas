@@ -1,6 +1,6 @@
-# ***Dark Web***
+# ***I. Dark Web***
 
-## 6.1.Wiki
+## 1.1.Wiki
 
    - The Hidden Wiki
    ```bash
@@ -11,7 +11,7 @@
    http[:]//jaz45aabn5vkemy4jkg4mi4syheisqn2wn2n4fsuitpccdackjwxplad[.]onion/
    ```
 
-## 6.2.Ransomware Group
+## 1.2.Ransomware Group
 
    - Ransomware Group Sites
    ```bash
@@ -42,7 +42,7 @@
    http[:]//rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad[.]onion/
    ``` 
 
-## 6.3.Otros
+## 1.3.Otros
    
    - Black Market CC
    ```bash
@@ -64,7 +64,7 @@
    ```bash
    http[:]//darknetlidvrsli6iso7my54rjayjursyw637aypb6qambkoepmyq2yd[.]onion/onions
    ```
-## 6.4.Breach Forums
+## 1.4.Breach Forums
    ```bash
    https://breachforums.st/member.php
    ```
