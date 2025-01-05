@@ -25,6 +25,8 @@
 | `User-Agent Switcher` | Esta extensión se utiliza para cambiar de agente de usuario y es mejor para probar el sitio con muchos agentes de usuario | https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/3f04196e833cb1ef093f4b0c5adb007a51002c00/extension-img/User-AgentSwitcher.png "User-Agent Switcher") | `ntninja` |
 | `retire.js` | Esta extensión le indica todas las bibliotecas de JavaScript vulnerables | https://addons.mozilla.org/en-US/firefox/addon/retire-js/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/00c80a1bd8c03314a46d2a8551f99246dafc5fa3/extension-img/retire.js.png "retire.js") | `Francesco De Stefano` |
 | `Shodan` | El complemento Shodan le indica dónde está alojado el sitio web (país, ciudad), quién es el propietario de la IP y qué otros servicios/puertos están abiertos | https://addons.mozilla.org/es/firefox/addon/shodan-addon/ | Firefox | ![alt text](https://github.com/paulportanc/Notas/blob/c80ff9b136cdb3a8bc787fd6ea818841fe948703/extension-img/Shodan.png "Shodan") | `Shodan` |
+| `EXIF Viewer Pro` | El complemento Shodan le indica dónde está alojado el sitio web (país, ciudad), quién es el propietario de la IP y qué otros servicios/puertos están abiertos | https://chromewebstore.google.com/detail/exif-viewer-pro/mmbhfeiddhndihdjeganjggkmjapkffm | Chrome | ![alt text](https://github.com/paulportanc/Notas/blob/e7f0cf2bfe15f96b1c0baf047bbe764e465fbd27/extension-img/EXIFViewerPro.png "EXIF Viewer Pro") | `exifviewers.com` |
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
