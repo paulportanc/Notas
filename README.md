@@ -170,13 +170,6 @@
    nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount <TARGET_IP> 
    ``` 
 
-## 1.8.Rockyou
-
-1. Descomprimir
-
-   ```bash
-   gzip -d /usr/share/wordlists/rockyou.txt.gz
-   ```
 
 ## 1.9.SSH
 
